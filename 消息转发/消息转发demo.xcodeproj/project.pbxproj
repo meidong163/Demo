@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5913CC8B21C3F44300D2A8DB /* GCDMulticastDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5913CC8A21C3F44300D2A8DB /* GCDMulticastDelegate.m */; };
+		5913CC8E21C3F47C00D2A8DB /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 5913CC8D21C3F47C00D2A8DB /* Dog.m */; };
 		59F8BCA621C3537200A47A86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F8BCA521C3537200A47A86 /* AppDelegate.m */; };
 		59F8BCA921C3537200A47A86 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F8BCA821C3537200A47A86 /* ViewController.m */; };
 		59F8BCAC21C3537200A47A86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59F8BCAA21C3537200A47A86 /* Main.storyboard */; };
@@ -17,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5913CC8921C3F43400D2A8DB /* GCDMulticastDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDMulticastDelegate.h; sourceTree = "<group>"; };
+		5913CC8A21C3F44300D2A8DB /* GCDMulticastDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDMulticastDelegate.m; sourceTree = "<group>"; };
+		5913CC8C21C3F47C00D2A8DB /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		5913CC8D21C3F47C00D2A8DB /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 		59F8BCA121C3537200A47A86 /* 消息转发demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "消息转发demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F8BCA421C3537200A47A86 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		59F8BCA521C3537200A47A86 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -63,6 +69,10 @@
 			children = (
 				59F8BCBA21C3547C00A47A86 /* People.h */,
 				59F8BCBB21C3547C00A47A86 /* People.m */,
+				5913CC8C21C3F47C00D2A8DB /* Dog.h */,
+				5913CC8D21C3F47C00D2A8DB /* Dog.m */,
+				5913CC8921C3F43400D2A8DB /* GCDMulticastDelegate.h */,
+				5913CC8A21C3F44300D2A8DB /* GCDMulticastDelegate.m */,
 				59F8BCA421C3537200A47A86 /* AppDelegate.h */,
 				59F8BCA521C3537200A47A86 /* AppDelegate.m */,
 				59F8BCA721C3537200A47A86 /* ViewController.h */,
@@ -145,10 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5913CC8E21C3F47C00D2A8DB /* Dog.m in Sources */,
 				59F8BCBC21C3547C00A47A86 /* People.m in Sources */,
 				59F8BCA921C3537200A47A86 /* ViewController.m in Sources */,
 				59F8BCB421C3537400A47A86 /* main.m in Sources */,
 				59F8BCA621C3537200A47A86 /* AppDelegate.m in Sources */,
+				5913CC8B21C3F44300D2A8DB /* GCDMulticastDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
