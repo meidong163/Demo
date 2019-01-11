@@ -2,7 +2,7 @@
 //  ViewController.m
 //  消息转发demo
 //
-//  Created by 舒江波 on 2018/12/14.
+//  Created by mac on 2018/12/14.
 //
 
 #import "ViewController.h"
@@ -29,19 +29,17 @@
     [super viewDidLoad];
     
     // 调用eat 方法，现在当前类查找，如果查找不到，去父类找。如果找不到，进入到消息转发
-    [self performSelector:@selector(eat) withObject:nil];
+//    [self performSelector:@selector(eat) withObject:nil];
     
 //     多播代理
     People *p1 = [People new];
     Dog *d1 = [Dog new];
-
     GCDMulticastDelegate *mutlDelegate = [[GCDMulticastDelegate alloc]init];
     [mutlDelegate addDelegate:p1 delegateQueue:dispatch_get_global_queue(0, 0)];
     [mutlDelegate addDelegate:d1 delegateQueue:dispatch_get_global_queue(0, 0)];
     // mutlDelegate 并没有实现 test1 而是通过消息转发去调用，分别让 p1 和 d1 处理test1消息 相当于d1 p1 异步调用自己的test1方法
     //打断点在 GCDMulticastDelegate.m 244 看result的值 有惊喜
     [mutlDelegate performSelector:@selector(test1)];
-    
 
 }
 
