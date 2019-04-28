@@ -29,7 +29,7 @@
     [super viewDidLoad];
     
     // 调用eat 方法，现在当前类查找，如果查找不到，去父类找。如果找不到，进入到消息转发
-    [self performSelector:@selector(eat) withObject:nil];
+//    [self performSelector:@selector(eat) withObject:nil];
     
 //     多播代理
     People *p1 = [People new];
